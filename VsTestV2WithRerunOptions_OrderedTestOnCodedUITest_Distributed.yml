@@ -5,7 +5,7 @@ trigger:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool: Default
+  pool: Din_pool
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
@@ -15,7 +15,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: 'OrderedTest1.orderedtest\nUnitTestProject1\CodedUITestProject3\CodedUITestProject3\OrderedTest2.orderedtest\n!**\obj\**'
+      testAssemblyVer2: 'OrderedTest1.orderedtest'
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
       configuration: '$(BuildConfiguration)'
