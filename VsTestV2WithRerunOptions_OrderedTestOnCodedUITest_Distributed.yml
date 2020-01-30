@@ -15,7 +15,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: 'UnitTestProject1\CodedUITestProject3\CodedUITestProject3\OrderedTest1.orderedtest'
+      testAssemblyVer2: 'CodedUITestProject3\CodedUITestProject3\OrderedTest1.orderedtest'
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
       configuration: '$(BuildConfiguration)'
