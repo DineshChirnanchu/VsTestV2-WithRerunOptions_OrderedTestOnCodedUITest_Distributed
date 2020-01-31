@@ -15,7 +15,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      TestCaseFilter: 'priority = 2 '
+      TestCaseFilter: 'priority = 2'
       testAssemblyVer2: 'OrderedTest1.orderedtest'
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
