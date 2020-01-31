@@ -16,7 +16,9 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       TestCaseFilter: 'priority = 2'
-      testAssemblyVer2: 'OrderedTest1.orderedtest, OrderedTest2.orderedtest'
+      testAssemblyVer2: | 
+      OrderedTest1.orderedtest 
+      OrderedTest2.orderedtest
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
       configuration: '$(BuildConfiguration)'
