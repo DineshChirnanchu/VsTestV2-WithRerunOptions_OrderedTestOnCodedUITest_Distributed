@@ -19,6 +19,7 @@ jobs:
         **\*OrderedTest1.orderedtest
         **\*OrderedTest2.orderedtest
         !**\obj\**
+      searchFolder: '$(System.DefaultWorkingDirectory)\bin\Debug\'
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
       customBatchSizeValue: '10'
