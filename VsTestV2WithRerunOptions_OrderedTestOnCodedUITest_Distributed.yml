@@ -15,11 +15,12 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      TestCaseFilter: Priority = 2
-      testAssemblyVer2: 'OrderedTest1.orderedtest'
+      testAssemblyVer2: |
+        **\*OrderedTest1.orderedtest
+        **\*OrderedTest2.orderedtest
+        !**\obj\**
       vsTestVersion: 'toolsInstaller'
       batchingBasedOnAgentsOption: 'customBatchSize'
-      configuration: '$(BuildConfiguration)'
       customBatchSizeValue: '10'
       rerunFailedTests: true
       rerunType: 'basedOnTestFailureCount'
