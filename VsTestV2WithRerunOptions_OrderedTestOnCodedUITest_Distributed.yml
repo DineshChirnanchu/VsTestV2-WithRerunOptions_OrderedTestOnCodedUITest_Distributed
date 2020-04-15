@@ -10,8 +10,9 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
+      packageFeedSelector: 'nugetOrg'
       versionSelector: 'specificVersion'
-      testPlatformVersion: '15.9.0'
+      testPlatformVersion: '16.5.0'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
