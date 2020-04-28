@@ -8,7 +8,13 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
+<<<<<<< HEAD
       versionSelector: 'latestPreRelease'
+=======
+      packageFeedSelector: 'nugetOrg'
+      versionSelector: 'specificVersion'
+      testPlatformVersion: '16.5.0'
+>>>>>>> a8e0eba1f6d73d4f7d252ffd8a93b5ba828c78af
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
