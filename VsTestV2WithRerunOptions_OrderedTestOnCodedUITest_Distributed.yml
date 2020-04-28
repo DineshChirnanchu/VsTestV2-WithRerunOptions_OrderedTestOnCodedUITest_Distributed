@@ -1,7 +1,5 @@
 # The objective is to perform VSTESTV2 With RerunOptions_OrderedTestOnCodedUITest_Distributed
 
-trigger:
-- master
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
@@ -10,8 +8,7 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'specificVersion'
-      testPlatformVersion: '15.9.0'
+      versionSelector: 'latestPreRelease'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
